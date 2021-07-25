@@ -13,7 +13,7 @@ namespace CSVFile
          */
         static void Main(string[] args)
         {
-            string file = @"sales_data_sample.csv";
+            string file = "sales_data_sample.csv";
 
             string[] contents = File.ReadAllLines(file);
 
@@ -50,10 +50,14 @@ namespace CSVFile
                         Console.WriteLine($"Error: No year for {year}.");
                     }
                 }
-                
-
             }
 
+            for (int i = 0; i < contents.Length; i++)
+            {
+                string line = contents[i];
+                string
+
+            }
             Console.WriteLine($"2003 = {salesfor2003}");
             Console.WriteLine($"2004 = {salesfor2004}");
             Console.WriteLine($"2005 = {salesfor2005}");
